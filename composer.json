@@ -1,7 +1,7 @@
 {
     "name": "getpop/field-deprecation-by-directive",
     "type": "library",
-    "description": "Add HTTP caching to the response",
+    "description": "Deprecate fields by directive",
     "keywords": [
         "PoP",
         "field-deprecation-by-directive"
