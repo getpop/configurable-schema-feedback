@@ -1,0 +1,56 @@
+{
+    "name": "getpop/field-deprecation-by-directive",
+    "type": "library",
+    "description": "Add HTTP caching to the response",
+    "keywords": [
+        "PoP",
+        "field-deprecation-by-directive"
+    ],
+    "homepage": "https://github.com/getpop/field-deprecation-by-directive",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leonardo Losoviz",
+            "email": "leo@getpop.org",
+            "homepage": "https://getpop.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php" : "~7.1",
+        "getpop/mandatory-directives-by-configuration": "dev-master"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12",
+        "phpunit/phpunit": ">=7.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PoP\\FieldDeprecationByDirective\\": "src"
+        },
+        "files": [
+            "initialize.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PoP\\FieldDeprecationByDirective\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests",
+        "analyse": "phpstan analyse -c phpstan.neon.dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

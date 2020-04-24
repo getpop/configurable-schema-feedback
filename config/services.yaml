@@ -1,0 +1,8 @@
+services:
+    field_deprecation_manager:
+        class: \PoP\FieldDeprecationByDirective\Managers\FieldDeprecationManager
+        public: true
+
+    PoP\FieldDeprecationByDirective\TypeResolverDecorators\:
+        resource: '../src/TypeResolverDecorators/*'
+        public: true
