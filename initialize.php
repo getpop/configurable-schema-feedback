@@ -1,2 +1,2 @@
 <?php
-\PoP\FieldDeprecationByDirective\Component::init();
+//\PoP\FieldDeprecationByDirective\Component::initialize();
