@@ -13,6 +13,8 @@ use PoP\ComponentModel\Container\ContainerBuilderUtils;
  */
 class Component extends AbstractComponent
 {
+    use YAMLServicesTrait;
+    
     // const VERSION = '0.1.0';
 
     public static function getDependedComponentClasses(): array
@@ -21,7 +23,6 @@ class Component extends AbstractComponent
             \PoP\MandatoryDirectivesByConfiguration\Component::class,
         ];
     }
-    use YAMLServicesTrait;
 
     /**
      * Initialize services
