@@ -14,7 +14,7 @@ use PoP\ComponentModel\Container\ContainerBuilderUtils;
 class Component extends AbstractComponent
 {
     use YAMLServicesTrait;
-    
+
     // const VERSION = '0.1.0';
 
     public static function getDependedComponentClasses(): array
@@ -27,7 +27,7 @@ class Component extends AbstractComponent
     /**
      * Initialize services
      */
-    protected static function doInitialize()
+    protected static function doInitialize(): void
     {
         parent::doInitialize();
         self::initYAMLServices(dirname(__DIR__));
@@ -38,7 +38,7 @@ class Component extends AbstractComponent
      *
      * @return void
      */
-    public static function afterBoot()
+    public static function afterBoot(): void
     {
         parent::afterBoot();
 
