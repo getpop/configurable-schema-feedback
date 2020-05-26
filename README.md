@@ -25,7 +25,9 @@ composer require getpop/field-deprecation-by-directive
 Initialize the component:
 
 ``` php
-\PoP\FieldDeprecationByDirective\Component::initialize();
+\PoP\Root\ComponentLoader::initializeComponents([
+    \PoP\FieldDeprecationByDirective\Component::class,
+]);
 ```
 
 ## Standards
