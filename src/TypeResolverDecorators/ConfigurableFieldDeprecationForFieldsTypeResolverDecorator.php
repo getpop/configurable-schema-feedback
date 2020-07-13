@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace PoP\FieldDeprecationByDirective\TypeResolverDecorators;
 
-use PoP\FieldDeprecationByDirective\Facades\FieldDeprecationManagerFacade;
+use PoP\Engine\Enums\FieldFeedbackTypeEnum;
+use PoP\Engine\Enums\FieldFeedbackTargetEnum;
 use PoP\ComponentModel\Facades\Schema\FieldQueryInterpreterFacade;
 use PoP\Engine\DirectiveResolvers\AddFeedbackForFieldDirectiveResolver;
+use PoP\FieldDeprecationByDirective\Facades\FieldDeprecationManagerFacade;
 use PoP\MandatoryDirectivesByConfiguration\TypeResolverDecorators\AbstractMandatoryDirectivesForFieldsTypeResolverDecorator;
 
 class ConfigurableFieldDeprecationForFieldsTypeResolverDecorator extends AbstractMandatoryDirectivesForFieldsTypeResolverDecorator
@@ -26,8 +28,8 @@ class ConfigurableFieldDeprecationForFieldsTypeResolverDecorator extends Abstrac
             $directiveName,
             [
                 'message' => $message,
-                'type' => AddFeedbackForFieldDirectiveResolver::FEEDBACK_TYPE_DEPRECATION,
-                'target' => AddFeedbackForFieldDirectiveResolver::FEEDBACK_TARGET_SCHEMA,
+                'type' => FieldFeedbackTypeEnum::DEPRECATION,
+                'target' => FieldFeedbackTargetEnum::SCHEMA,
             ]
         );
         return [
