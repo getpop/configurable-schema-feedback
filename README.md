@@ -1,4 +1,4 @@
-# Field Deprecation by Directive
+# Configurable Schema Feedback
 
 [![Build Status][ico-travis]][link-travis]
 [![Quality Score][ico-code-quality]][link-code-quality]
@@ -10,14 +10,14 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 -->
 
-Deprecate fields by directive
+Define schema feedback by configuration
 
 ## Install
 
 Via Composer
 
 ``` bash
-composer require getpop/field-deprecation-by-directive
+composer require getpop/configurable-schema-feedback
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ Initialize the component:
 
 ``` php
 \PoP\Root\ComponentLoader::initializeComponents([
-    \PoP\FieldDeprecationByDirective\Component::class,
+    \PoP\ConfigurableSchemaFeedback\Component::class,
 ]);
 ```
 
@@ -75,17 +75,17 @@ If you discover any security related issues, please email leo@getpop.org instead
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/getpop/field-deprecation-by-directive.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/getpop/configurable-schema-feedback.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/getpop/field-deprecation-by-directive/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/getpop/field-deprecation-by-directive.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/getpop/field-deprecation-by-directive.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/getpop/field-deprecation-by-directive.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/getpop/configurable-schema-feedback/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/getpop/configurable-schema-feedback.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/getpop/configurable-schema-feedback.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/getpop/configurable-schema-feedback.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/getpop/field-deprecation-by-directive
-[link-travis]: https://travis-ci.org/getpop/field-deprecation-by-directive
-[link-scrutinizer]: https://scrutinizer-ci.com/g/getpop/field-deprecation-by-directive/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/getpop/field-deprecation-by-directive
-[link-downloads]: https://packagist.org/packages/getpop/field-deprecation-by-directive
+[link-packagist]: https://packagist.org/packages/getpop/configurable-schema-feedback
+[link-travis]: https://travis-ci.org/getpop/configurable-schema-feedback
+[link-scrutinizer]: https://scrutinizer-ci.com/g/getpop/configurable-schema-feedback/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/getpop/configurable-schema-feedback
+[link-downloads]: https://packagist.org/packages/getpop/configurable-schema-feedback
 [link-author]: https://github.com/leoloso
 [link-contributors]: ../../contributors

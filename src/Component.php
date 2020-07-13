@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PoP\FieldDeprecationByDirective;
+namespace PoP\ConfigurableSchemaFeedback;
 
 use PoP\Root\Component\AbstractComponent;
 use PoP\Root\Component\YAMLServicesTrait;

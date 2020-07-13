@@ -1,12 +1,12 @@
 {
-    "name": "getpop/field-deprecation-by-directive",
+    "name": "getpop/configurable-schema-feedback",
     "type": "library",
-    "description": "Deprecate fields by directive",
+    "description": "Define schema feedback by configuration",
     "keywords": [
         "PoP",
-        "field-deprecation-by-directive"
+        "configurable-schema-feedback"
     ],
-    "homepage": "https://github.com/getpop/field-deprecation-by-directive",
+    "homepage": "https://github.com/getpop/configurable-schema-feedback",
     "license": "MIT",
     "authors": [
         {
@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PoP\\FieldDeprecationByDirective\\": "src"
+            "PoP\\ConfigurableSchemaFeedback\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PoP\\FieldDeprecationByDirective\\": "tests"
+            "PoP\\ConfigurableSchemaFeedback\\": "tests"
         }
     },
     "scripts": {

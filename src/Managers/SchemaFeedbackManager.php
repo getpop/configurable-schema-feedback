@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace PoP\FieldDeprecationByDirective\Managers;
+namespace PoP\ConfigurableSchemaFeedback\Managers;
 
-use PoP\FieldDeprecationByDirective\Managers\FieldDeprecationManagerInterface;
+use PoP\ConfigurableSchemaFeedback\Managers\SchemaFeedbackManagerInterface;
 
-class FieldDeprecationManager implements FieldDeprecationManagerInterface
+class SchemaFeedbackManager implements SchemaFeedbackManagerInterface
 {
     protected $fieldEntries = [];
 

@@ -1,4 +1,4 @@
 services:
-    field_deprecation_manager:
-        class: \PoP\FieldDeprecationByDirective\Managers\FieldDeprecationManager
+    schema_feedback_manager:
+        class: \PoP\ConfigurableSchemaFeedback\Managers\SchemaFeedbackManager
         public: true

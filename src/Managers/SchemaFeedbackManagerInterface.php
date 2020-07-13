@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PoP\FieldDeprecationByDirective\Managers;
+namespace PoP\ConfigurableSchemaFeedback\Managers;
 
-interface FieldDeprecationManagerInterface
+interface SchemaFeedbackManagerInterface
 {
     public function getEntriesForFields(): array;
     public function addEntriesForFields(array $fieldEntries): void;
