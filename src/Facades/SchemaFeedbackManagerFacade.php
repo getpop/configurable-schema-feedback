@@ -11,6 +11,10 @@ class SchemaFeedbackManagerFacade
 {
     public static function getInstance(): SchemaFeedbackManagerInterface
     {
-        return ContainerBuilderFactory::getInstance()->get('schema_feedback_manager');
+        /**
+         * @var SchemaFeedbackManagerInterface
+         */
+        $service = ContainerBuilderFactory::getInstance()->get('schema_feedback_manager');
+        return $service;
     }
 }
