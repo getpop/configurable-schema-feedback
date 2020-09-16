@@ -8,7 +8,10 @@ use PoP\ConfigurableSchemaFeedback\Managers\SchemaFeedbackManagerInterface;
 
 class SchemaFeedbackManager implements SchemaFeedbackManagerInterface
 {
-    protected $fieldEntries = [];
+    /**
+     * @var array<array>
+     */
+    protected array $fieldEntries = [];
 
     public function getEntriesForFields(): array
     {
