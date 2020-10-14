@@ -1,4 +1,4 @@
 services:
-    schema_feedback_manager:
+    PoP\ConfigurableSchemaFeedback\Managers\SchemaFeedbackManagerInterface:
         class: \PoP\ConfigurableSchemaFeedback\Managers\SchemaFeedbackManager
         public: true

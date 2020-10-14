@@ -14,7 +14,7 @@ class SchemaFeedbackManagerFacade
         /**
          * @var SchemaFeedbackManagerInterface
          */
-        $service = ContainerBuilderFactory::getInstance()->get('schema_feedback_manager');
+        $service = ContainerBuilderFactory::getInstance()->get(SchemaFeedbackManagerInterface::class);
         return $service;
     }
 }
