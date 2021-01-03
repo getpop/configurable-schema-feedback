@@ -20,6 +20,10 @@ Via Composer
 composer require getpop/configurable-schema-feedback
 ```
 
+## Development
+
+The source code is hosted on the [PoP monorepo](https://github.com/leoloso/PoP), under [`Engine/packages/configurable-schema-feedback`](https://github.com/leoloso/PoP/tree/master/layers/Engine/packages/configurable-schema-feedback).
+
 ## Usage
 
 Initialize the component:
@@ -46,7 +50,7 @@ Same as the [Supported PHP features for `getpop/root`](https://github.com/getpop
 Via [Rector](https://github.com/rectorphp/rector) (dry-run mode):
 
 ```bash
-composer downgrade-code
+composer preview-code-downgrade
 ```
 
 ## Standards
@@ -107,4 +111,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-code-quality]: https://scrutinizer-ci.com/g/getpop/configurable-schema-feedback
 [link-downloads]: https://packagist.org/packages/getpop/configurable-schema-feedback
 [link-author]: https://github.com/leoloso
-[link-contributors]: ../../contributors
+[link-contributors]: ../../../../../../contributors
