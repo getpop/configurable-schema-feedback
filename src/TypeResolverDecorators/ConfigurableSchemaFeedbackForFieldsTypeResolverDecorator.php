@@ -15,7 +15,7 @@ use PoP\MandatoryDirectivesByConfiguration\TypeResolverDecorators\AbstractMandat
 
 class ConfigurableSchemaFeedbackForFieldsTypeResolverDecorator extends AbstractMandatoryDirectivesForFieldsTypeResolverDecorator
 {
-    function __construct(
+    public function __construct(
         InstanceManagerInterface $instanceManager,
         FieldQueryInterpreterInterface $fieldQueryInterpreter,
         protected SchemaFeedbackManagerInterface $schemaFeedbackManager,
@@ -25,13 +25,13 @@ class ConfigurableSchemaFeedbackForFieldsTypeResolverDecorator extends AbstractM
             $fieldQueryInterpreter,
         );
     }
-    
+
     protected function getConfigurationEntries(): array
     {
         return $this->schemaFeedbackManager->getEntriesForFields();
     }
 
-    protected function getMandatoryDirectives($entryValue = null): array
+    protected function getMandatoryDirectives(mixed $entryValue = null): array
     {
         $message = $entryValue;
         /** @var DirectiveResolverInterface */
